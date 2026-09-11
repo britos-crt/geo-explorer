@@ -1,0 +1,11 @@
+# Geo-Explorer MCP Server — dependências Python
+#
+# Instale com:
+#   pip install -r mcp/requirements.txt
+
+# Protocolo MCP (Model Context Protocol)
+mcp[cli]>=1.0.0
+
+# Modo HTTP/SSE — necessário apenas para acesso remoto via HTTPS ou API
+starlette>=0.40.0
+uvicorn>=0.30.0

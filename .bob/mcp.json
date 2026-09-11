@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "geo-explorer": {
+      "command": "/usr/bin/python3",
+      "args": [
+        "/home/britos/Documents/Exercicios/Dio/geo-explorer/mcp/server.py"
+      ],
+      "env": {}
+    }
+  }
+}

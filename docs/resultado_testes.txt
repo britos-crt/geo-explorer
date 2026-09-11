@@ -1,0 +1,89 @@
+
+================================================================================
+  RELATÓRIO DE TESTES — GEO-EXPLORER SLASH COMMANDS
+  Gerado em: 11/09/2026
+================================================================================
+
+COBERTURA DE TESTES POR COMANDO:
+  /trilhas     — consultar_trilha()   — cenários: Java encontrado, erros, edge cases
+  /desafio     — validar_desafio()    — cenários: parâmetros válidos e inválidos
+  /certificado — gerar_certificado()  — cenários: com/sem JSON, erros de validação
+
+--------------------------------------------------------------------------------
+RESULTADO DETALHADO:
+--------------------------------------------------------------------------------
+test_busca_java_exato (__main__.TestBuscarTrilha.test_busca_java_exato) ... ok
+test_busca_java_maiusculo (__main__.TestBuscarTrilha.test_busca_java_maiusculo) ... ok
+test_busca_java_minusculo (__main__.TestBuscarTrilha.test_busca_java_minusculo) ... ok
+test_busca_lista_vazia (__main__.TestBuscarTrilha.test_busca_lista_vazia) ... ok
+test_busca_por_nome_parcial (__main__.TestBuscarTrilha.test_busca_por_nome_parcial) ... ok
+test_busca_python (__main__.TestBuscarTrilha.test_busca_python) ... ok
+test_busca_tecnologia_inexistente (__main__.TestBuscarTrilha.test_busca_tecnologia_inexistente) ... ok
+test_arquivo_nao_encontrado (__main__.TestCarregarTrilhas.test_arquivo_nao_encontrado) ... ok
+test_arquivo_vazio (__main__.TestCarregarTrilhas.test_arquivo_vazio) ... ok
+test_carrega_json_valido (__main__.TestCarregarTrilhas.test_carrega_json_valido) ... ok
+test_json_invalido (__main__.TestCarregarTrilhas.test_json_invalido) ... ok
+test_arquivo_inexistente (__main__.TestConsultarTrilha.test_arquivo_inexistente) ... ok
+test_json_invalido (__main__.TestConsultarTrilha.test_json_invalido) ... ok
+test_tecnologia_espacos (__main__.TestConsultarTrilha.test_tecnologia_espacos) ... ok
+test_tecnologia_inexistente (__main__.TestConsultarTrilha.test_tecnologia_inexistente) ... ok
+test_tecnologia_vazia (__main__.TestConsultarTrilha.test_tecnologia_vazia) ... ok
+test_tecnologias_disponiveis_na_falha (__main__.TestConsultarTrilha.test_tecnologias_disponiveis_na_falha) ... ok
+test_trilha_java_badges (__main__.TestConsultarTrilha.test_trilha_java_badges) ... ok
+test_trilha_java_case_insensitive (__main__.TestConsultarTrilha.test_trilha_java_case_insensitive) ... ok
+test_trilha_java_encontrada (__main__.TestConsultarTrilha.test_trilha_java_encontrada) ... ok
+test_trilha_java_live_disponivel (__main__.TestConsultarTrilha.test_trilha_java_live_disponivel) ... ok
+test_trilha_java_modulos (__main__.TestConsultarTrilha.test_trilha_java_modulos) ... ok
+test_trilha_java_nivel (__main__.TestConsultarTrilha.test_trilha_java_nivel) ... ok
+test_trilha_java_nome_completo (__main__.TestConsultarTrilha.test_trilha_java_nome_completo) ... ok
+test_trilha_java_sem_promocao (__main__.TestConsultarTrilha.test_trilha_java_sem_promocao) ... ok
+test_trilha_java_vitalicio (__main__.TestConsultarTrilha.test_trilha_java_vitalicio) ... ok
+test_trilha_java_xp (__main__.TestConsultarTrilha.test_trilha_java_xp) ... ok
+test_trilha_python_encontrada (__main__.TestConsultarTrilha.test_trilha_python_encontrada) ... ok
+test_certificado_badges_disponiveis (__main__.TestGerarCertificado.test_certificado_badges_disponiveis) ... ok
+test_certificado_contem_dados_trilha (__main__.TestGerarCertificado.test_certificado_contem_dados_trilha) ... ok
+test_certificado_data_emissao_formato (__main__.TestGerarCertificado.test_certificado_data_emissao_formato) ... ok
+test_certificado_data_emissao_hoje (__main__.TestGerarCertificado.test_certificado_data_emissao_hoje) ... ok
+test_certificado_java_valido (__main__.TestGerarCertificado.test_certificado_java_valido) ... ok
+test_certificado_json_invalido_ainda_valido (__main__.TestGerarCertificado.test_certificado_json_invalido_ainda_valido) ... ok
+test_certificado_nome_com_espacos (__main__.TestGerarCertificado.test_certificado_nome_com_espacos) ... ok
+test_certificado_sem_json_ainda_valido (__main__.TestGerarCertificado.test_certificado_sem_json_ainda_valido) ... ok
+test_certificado_trilha_inexistente_ainda_valido (__main__.TestGerarCertificado.test_certificado_trilha_inexistente_ainda_valido) ... ok
+test_certificado_xp_correto (__main__.TestGerarCertificado.test_certificado_xp_correto) ... ok
+test_nome_espacos (__main__.TestGerarCertificado.test_nome_espacos) ... ok
+test_nome_vazio (__main__.TestGerarCertificado.test_nome_vazio) ... ok
+test_tecnologia_espacos (__main__.TestGerarCertificado.test_tecnologia_espacos) ... ok
+test_tecnologia_vazia (__main__.TestGerarCertificado.test_tecnologia_vazia) ... ok
+test_acento_a (__main__.TestNormalizacao.test_acento_a) ... ok
+test_acento_e (__main__.TestNormalizacao.test_acento_e) ... ok
+test_minusculas (__main__.TestNormalizacao.test_minusculas) ... ok
+test_sem_alteracao (__main__.TestNormalizacao.test_sem_alteracao) ... ok
+test_string_vazia (__main__.TestNormalizacao.test_string_vazia) ... ok
+test_nivel_invalido (__main__.TestValidarDesafio.test_nivel_invalido) ... ok
+test_nivel_invalido_expert (__main__.TestValidarDesafio.test_nivel_invalido_expert) ... ok
+test_nivel_none_like (__main__.TestValidarDesafio.test_nivel_none_like) ... ok
+test_nivel_vazio (__main__.TestValidarDesafio.test_nivel_vazio) ... ok
+test_preserva_tecnologia_original (__main__.TestValidarDesafio.test_preserva_tecnologia_original) ... ok
+test_tecnologia_none_like (__main__.TestValidarDesafio.test_tecnologia_none_like) ... ok
+test_tecnologia_vazia (__main__.TestValidarDesafio.test_tecnologia_vazia) ... ok
+test_valido_java_iniciante (__main__.TestValidarDesafio.test_valido_java_iniciante) ... ok
+test_valido_python_intermediario (__main__.TestValidarDesafio.test_valido_python_intermediario) ... ok
+test_valido_react_avancado (__main__.TestValidarDesafio.test_valido_react_avancado) ... ok
+test_valido_sem_acento_avancado (__main__.TestValidarDesafio.test_valido_sem_acento_avancado) ... ok
+test_valido_sem_acento_intermediario (__main__.TestValidarDesafio.test_valido_sem_acento_intermediario) ... ok
+
+----------------------------------------------------------------------
+Ran 59 tests in 0.004s
+
+OK
+
+--------------------------------------------------------------------------------
+SUMÁRIO FINAL:
+  Total de testes executados : 59
+  ✅ Aprovados                : 59
+  ❌ Falhas                   : 0
+  💥 Erros                    : 0
+  📊 Taxa de aprovação        : 100.0%
+  🎯 Meta mínima              : 70.0%
+  ✅ META ATINGIDA
+================================================================================
